@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+   <meta charset='UTF-8'>
+   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+   <link rel='stylesheet' href='./css/index.css'>
+   <script src='./js/index.js' defer></script>
+   <title>Document</title>
+</head>
+<style>
+   .wrapper {
+      height: 100vh;
+      place-content: center;
+   }
+
+   
+
+   .block {
+      width: 100px;
+      height: 100px;
+   }
+   
+   .fixed {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      background-color: #ccc;
+      /* z-index: 10; */
+   }
+   
+   .absolute {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #e6e637;
+      /* z-index: 20; */
+   }
+</style>
+
+<body>
+   <div class='wrapper'>
+      <div class="container">
+         <div class="block fixed">фиксед</div>
+         <div class="block absolute">абсолют</div>
+      </div>
+      
+   </div>
+</body>
+<html />
+<!-- <header class='header'>
+   
+</header>
+<main class='main'>
+   <div class='container main-container'>
+      <div class="main-static">
+          <h1>Hello World!</h1>
+          <a href="#">туда</a>
+          <button style="cursor: pointer;">Кнопка</button>
+      </div>
+      <div class="main-absolute"></div>
+   </div>
+</main>
+<footer class='footer'></footer> -->

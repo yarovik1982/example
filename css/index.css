@@ -1,0 +1,79 @@
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+:root {
+   --clamp-fs-sm: clamp(0.75rem, 0.7rem + 0.25vw, 1.5rem);
+   --clamp-fs-md: clamp(1rem, 0.8rem + 1vw, 2rem);
+   --clamp-fs-xxx: clamp(1rem, 0rem + 5vw, 3rem);
+   --fs-base: clamp(1.25rem, 1.25rem + 0.625vw, 1.875rem) --fs-1:var(--fs-base);
+   --fs-2: calc(var(--fs-base) * .9);
+   --fs-3: calc(var(--fs-base) * .8);
+   --fs-4: calc(var(--fs-base) * .7);
+   --fs-5: calc(var(--fs-base) * .6);
+   --fs-6: calc(var(--fs-base) * .5);
+   --fs-7: calc(var(--fs-base) * .4);
+   --fs-8: calc(var(--fs-base) * .3);
+   --base-color: rgba(0, 172, 238, 1);
+}
+
+body {
+   width: 100%;
+   min-height: 100vh;
+   font-family: sans-serif;
+}
+
+.none {
+   display: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+ul,
+li {
+   list-style: none
+}
+
+.main {
+   width: 100%;
+   min-height: 100vh;
+   place-content: center;
+}
+
+.main-static {
+   width: 100%;
+   height: 100%;
+}
+
+.main-static a {
+   position: relative;
+   z-index: 20;
+}
+
+.main-static button {
+   position: relative;
+   z-index: 20;
+}
+
+.main-absolute {
+   position: absolute;
+   inset: 0;
+   z-index: 10;
+   background-color: rgba(0, 0, 0, .5);
+}
+
+.container {
+   width: 500px;
+   height: 500px;
+   margin: 0 auto;
+   padding: 0 15px;
+   border: 1px solid #000;
+   background: url(../images/300x300.jfif);
+   background-size: cover;
+   background-repeat: no-repeat;
+   /* position: relative; */
+}
